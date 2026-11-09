@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering — UPTECH MICROSYSTEMS</title>
+  <meta name="description" content="UPTECH MICROSYSTEMS engineering departments: software engineering, artificial intelligence, robotics & automation, embedded systems & electronics, and IoT & connected systems." />
+  <meta name="theme-color" content="#0a1628" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://uptechmicrosystems.com/engineering.html" />
+  <meta property="og:title" content="Engineering — UPTECH MICROSYSTEMS" />
+  <meta property="og:description" content="Full-stack engineering across software, AI, robotics, embedded systems and IoT." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://uptechmicrosystems.com/engineering.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header" role="banner">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand" aria-label="UPTECH MICROSYSTEMS home">
+      <img class="brand__logo" src="images/logo.svg" alt="" width="40" height="40" />
+      <span class="brand__text"><span class="brand__name">UPTECH</span><span class="brand__sub">Microsystems</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="engineering.html" class="active">Engineering</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="products.html">Products</a>
+      <a href="projects.html">Projects</a>
+      <a href="research.html">Research &amp; Innovation</a>
+      <a href="knowledge.html">Knowledge Centre</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn--primary btn--sm nav-cta">Request a Consultation</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="engineering.html" class="active">Engineering</a>
+  <a href="solutions.html">Solutions</a>
+  <a href="products.html">Products</a>
+  <a href="projects.html">Projects</a>
+  <a href="research.html">Research &amp; Innovation</a>
+  <a href="knowledge.html">Knowledge Centre</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="contact.html" class="btn btn--primary">Request a Consultation</a>
+</div>
+
+<main>
+<!-- ================= PAGE HERO with rotating gear + atomic orbit ================= -->
+<section class="page-hero">
+  <div class="page-hero__bg" aria-hidden="true"></div>
+  <div class="page-hero__grid" aria-hidden="true"></div>
+
+  <!-- Decorative SVG: gear in atomic orbit -->
+  <div class="gear-orbit" aria-hidden="true">
+    <svg viewBox="0 0 400 400" fill="none">
+      <defs>
+        <linearGradient id="gearGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#2ee0a6"/>
+          <stop offset="1" stop-color="#00a878"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Atomic orbit rings -->
+      <g class="orbit-ring" stroke="rgba(0,196,140,0.40)" stroke-width="1" fill="none">
+        <ellipse cx="200" cy="200" rx="175" ry="70" transform="rotate(20 200 200)"/>
+      </g>
+      <g class="orbit-ring orbit-ring--2" stroke="rgba(0,196,140,0.28)" stroke-width="1" fill="none">
+        <ellipse cx="200" cy="200" rx="155" ry="92" transform="rotate(-25 200 200)"/>
+      </g>
+      <g class="orbit-ring orbit-ring--3" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none">
+        <circle cx="200" cy="200" r="125"/>
+      </g>
+
+      <!-- Electrons on the orbits -->
+      <circle class="electron" cx="368" cy="180" r="4.5" fill="#2ee0a6"/>
+      <circle class="electron" cx="70"  cy="255" r="4"   fill="#2ee0a6" style="animation-delay:1s"/>
+      <circle class="electron" cx="258" cy="345" r="4"   fill="#2ee0a6" style="animation-delay:2s"/>
+
+      <!-- Rotating gear at the centre -->
+      <g transform="translate(200 200)">
+        <g class="gear-rotate">
+          <!-- Gear teeth (8 around the ring) -->
+          <g fill="url(#gearGrad)" opacity="0.92">
+            <rect x="-7" y="-42" width="14" height="16" rx="2.5"/>
+            <rect x="-7" y="-42" width="14" height="16" rx="2.5" transform="rotate(45)"/>
+            <rect x="-7" y="-42" width="14" height="16" rx="2.5" transform="rotate(90)"/>
+            <rect x="-7" y="-42" width="14" height="16" rx="2.5" transform="rotate(135)"/>
+            <rect x="-7" y="-42" width="14" height="16" rx="2.5" transform="rotate(180)"/>
+            <rect x="-7" y="-42" width="14" height="16" rx="2.5" transform="rotate(225)"/>
+            <rect x="-7" y="-42" width="14" height="16" rx="2.5" transform="rotate(270)"/>
+            <rect x="-7" y="-42" width="14" height="16" rx="2.5" transform="rotate(315)"/>
+          </g>
+          <!-- Gear outer ring -->
+          <circle r="30" fill="rgba(0,196,140,0.08)" stroke="url(#gearGrad)" stroke-width="3"/>
+          <!-- Inner hub ring -->
+          <circle r="13" fill="none" stroke="#2ee0a6" stroke-width="2"/>
+          <!-- Hub spokes -->
+          <g stroke="#2ee0a6" stroke-width="2" stroke-linecap="round">
+            <line x1="-13" y1="0" x2="-30" y2="0"/>
+            <line x1="13" y1="0"  x2="30" y2="0"/>
+            <line x1="0" y1="-13" x2="0" y2="-30"/>
+            <line x1="0" y1="13"  x2="0" y2="30"/>
+          </g>
+          <!-- Centre dot -->
+          <circle r="4.5" fill="#00c48c"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span class="sep">/</span><span>Engineering</span>
+    </nav>
+    <span class="eyebrow">Engineering Departments</span>
+    <h1>Five disciplines. One engineering team.</h1>
+    <p class="lead">We combine software, intelligence, automation, electronics and connectivity to engineer complete systems.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2">
+      <article class="dept-card reveal">
+        <div class="dept-card__head">
+          <div class="dept-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <h2>Software Engineering</h2>
+        </div>
+        <p>Robust applications and enterprise platforms, from web and mobile to desktop and APIs.</p>
+        <ul>
+          <li>Web applications</li>
+          <li>Android applications</li>
+          <li>Desktop applications</li>
+          <li>Enterprise management systems</li>
+          <li>Database-driven applications</li>
+          <li>API development and integration</li>
+        </ul>
+      </article>
+
+      <article class="dept-card reveal">
+        <div class="dept-card__head">
+          <div class="dept-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1l2.1-2.1M17 7l2.1-2.1"/></svg></div>
+          <h2>Artificial Intelligence</h2>
+        </div>
+        <p>Applied AI and machine learning integrated into practical software products.</p>
+        <ul>
+          <li>AI-powered applications</li>
+          <li>Machine learning</li>
+          <li>AI assistants</li>
+          <li>Computer vision</li>
+          <li>OCR and document processing</li>
+          <li>Predictive analytics</li>
+        </ul>
+      </article>
+
+      <article class="dept-card reveal">
+        <div class="dept-card__head">
+          <div class="dept-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="12" rx="2"/><circle cx="8.5" cy="14" r="1.5"/><circle cx="15.5" cy="14" r="1.5"/><path d="M12 8V4M8 4h8"/></svg></div>
+          <h2>Robotics &amp; Automation</h2>
+        </div>
+        <p>Intelligent systems that sense, decide and act — in industry and in the field.</p>
+        <ul>
+          <li>Autonomous systems</li>
+          <li>Industrial automation</li>
+          <li>Agricultural robotics</li>
+          <li>Sensor-based automation</li>
+          <li>Intelligent control systems</li>
+        </ul>
+      </article>
+
+      <article class="dept-card reveal">
+        <div class="dept-card__head">
+          <div class="dept-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M4 9h1M4 15h1M19 9h1M19 15h1M9 4v1M15 4v1M9 19v1M15 19v1"/></svg></div>
+          <h2>Embedded Systems &amp; Electronics</h2>
+        </div>
+        <p>Hardware-software integration with microcontrollers, sensors and control electronics.</p>
+        <ul>
+          <li>Arduino development</li>
+          <li>ESP32 development</li>
+          <li>STM32 and microcontroller programming</li>
+          <li>Electronic control systems</li>
+          <li>Sensor integration</li>
+          <li>Hardware-software integration</li>
+        </ul>
+      </article>
+
+      <article class="dept-card reveal" style="grid-column: 1 / -1;">
+        <div class="dept-card__head">
+          <div class="dept-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14 0"/><path d="M8.5 16.03a6 6 0 0 1 7 0"/><circle cx="12" cy="20" r="1"/><path d="M2 9a16 16 0 0 1 20 0"/></svg></div>
+          <h2>IoT &amp; Connected Systems</h2>
+        </div>
+        <p>Connected devices and data pipelines that make operations visible in real time.</p>
+        <ul>
+          <li>Smart monitoring</li>
+          <li>Remote data collection</li>
+          <li>Connected devices</li>
+          <li>Real-time monitoring</li>
+          <li>IoT dashboards</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--silver">
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2>Need a system that spans hardware and software?</h2>
+      <p>Our engineering departments are designed to work together on a single project.</p>
+      <div class="cta-band__actions">
+        <a href="contact.html" class="btn btn--primary btn--lg">Request a Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img class="brand__logo" src="images/logo.svg" alt="" width="40" height="40" />
+          <span class="brand__text"><span class="brand__name">UPTECH</span><span class="brand__sub">Microsystems</span></span>
+        </a>
+        <p>Engineering Intelligence. Building the Future.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="engineering.html">Engineering</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="knowledge.html">Knowledge Centre</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Work</h4>
+        <ul>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+256785801617">+256 785 801 617</a></li>
+          <li><a href="mailto:info@uptechmicrosystems.com">info@uptechmicrosystems.com</a></li>
+          <li><a href="https://wa.me/256785801617" target="_blank" rel="noopener">WhatsApp Us</a></li>
+          <li>Kampala, Uganda</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2025</span> UPTECH MICROSYSTEMS. All rights reserved.</p>
+      <p>Engineering Intelligence. Building the Future.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+<a
+  href="https://wa.me/256785801617?text=Hello%20UPTECH%20MICROSYSTEMS%2C%20I%20would%20like%20to%20discuss%20a%20project."
+  class="wa-fab"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat with UPTECH MICROSYSTEMS on WhatsApp"
+  title="Chat with us on WhatsApp"
+>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1a7.93 7.93 0 0 0 3.84.98h.01a7.94 7.94 0 0 0 5.55-13.56zm-5.55 12.18a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.65.67-2.43-.16-.25a6.6 6.6 0 1 1 5.59 3.09zm3.62-4.94c-.2-.1-1.17-.58-1.35-.64-.18-.07-.31-.1-.44.1-.13.2-.5.64-.62.77-.11.13-.23.14-.43.05-.2-.1-.84-.31-1.6-.99-.59-.53-.99-1.18-1.1-1.38-.12-.2-.01-.31.09-.41.09-.09.2-.23.3-.35.1-.12.13-.2.2-.34.07-.13.03-.25-.02-.35-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.33-.11 0-.24-.02-.37-.02a.7.7 0 0 0-.51.24 2.16 2.16 0 0 0-.67 1.6c0 .94.68 1.85.78 1.98.1.13 1.34 2.05 3.25 2.87.45.2.81.31 1.09.4.46.15.87.13 1.2.08.37-.06 1.14-.47 1.3-.92.16-.45.16-.84.11-.92-.05-.08-.18-.13-.38-.23z"/>
+  </svg>
+</a>
+
+<a href="#top" class="back-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
